@@ -1,0 +1,23 @@
+name: langwenchong
+root: /home/deliverySystem/images/
+#root: src/main/resources/static/images/
+
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://1.117.169.85:3310/deliverySystem
+    username: root
+    password: 20010521
+
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+  servlet:
+    multipart:
+      max-file-size: 1MB
+      max-request-size: 1MB
