@@ -73,7 +73,7 @@ public class MenuController {
             return myJson;
         }
         User user = userRepository.findUserByUsername(tokenMap.get(token));
-        MyUtils u = utilsRepository.getMyUtils("Langwenchong");
+        MyUtils u = utilsRepository.getMyUtils("admin");
         String imgPath = "/user/" + user.getUsername() + "/" + u.getCid() + ".jpg";
         Cuisine c = new Cuisine(u.getCid(), name, descr, price, imgPath);
         cuisineRepository.save(c);

@@ -1,6 +1,6 @@
 name: langwenchong
-root: /home/deliverySystem/images/
-#root: src/main/resources/static/images/
+#root: /home/deliverySystem/images/
+root: src/main/resources/static/images/
 
 server:
   port: 8081
@@ -8,9 +8,9 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://1.117.169.85:3310/deliverySystem
+    url: jdbc:mysql://localhost:3306/deliverysystem
     username: root
-    password: 20010521
+    password: 123456
 
   jpa:
     hibernate:
