@@ -54,7 +54,7 @@ export default {
   },
   computed: {
     link() {
-      return `https://static.coolchong.cn${this.dish.imgPath}`;
+      return `http://localhost:8081/images/${this.dish.imgPath}`;
     },
   },
 };
